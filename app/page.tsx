@@ -3,6 +3,20 @@ import { HealthSolution } from "@/components/home-page-sections";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
+// function urlBase64ToUint8Array(base64String: string) {
+//   const padding = '='.repeat((4 - (base64String.length % 4)) % 4)
+//   const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/')
+ 
+//   const rawData = window.atob(base64)
+//   const outputArray = new Uint8Array(rawData.length)
+ 
+//   for (let i = 0; i < rawData.length; ++i) {
+//     outputArray[i] = rawData.charCodeAt(i)
+//   }
+//   return outputArray
+// }
+
+
 export default function Home() {
   return (
     <main className="">
@@ -14,7 +28,8 @@ export default function Home() {
         icon={<FaArrowRightLong />}
         imageUrl="/home-page/HeroImage.png"
       />
-
+      {/* <PushNotificationManager />
+      <InstallPrompt /> */}
       <HealthSolution />
     </main>
   );
