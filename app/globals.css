@@ -37,13 +37,14 @@
       transform: translateY(20px);
   }
   to {
+      transition-delay: 1s;
       opacity: 1;
       transform: translateY(0);
   }
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 1s ease-out forwards;
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 
 body {
