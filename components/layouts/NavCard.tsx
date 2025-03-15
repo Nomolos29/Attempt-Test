@@ -14,13 +14,14 @@ const NavCard: React.FC<NavCardProps> = ({navItems, title}) => {
 
             <div className="flex w-full justify-between flex-wrap gap-y-5">
                 {navItems.map((navItem, index) => (
-                    <ListItem
-                        key={index}
-                        className="w-1/2"
-                        icon={<span className="flex justify-center items-center h-[30px] w-[30px] rounded-full bg-[#D8F0AE]">{index + 1}</span>}
-                        title={navItem.navtitle}
-                        description={navItem.navDetail}
-                    />
+                    <div key={index} className="w-1/2">
+                        <ListItem
+                            icon={<span className="flex justify-center items-center h-[30px] w-[30px] rounded-full bg-[#D8F0AE]">{index + 1}</span>}
+                            title={navItem.navtitle}
+                            description={navItem.navDetail}
+                            textSize="sm"
+                        />
+                    </div>
                 ))}
             </div>
 

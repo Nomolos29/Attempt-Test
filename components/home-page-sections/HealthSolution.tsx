@@ -4,7 +4,7 @@ import { FaBookOpen } from 'react-icons/fa6'
 
 const HealthSolution = () => {
   return (
-    <section className='flex flex-col gap-y-5 py-20'>
+    <section className='flex flex-col gap-y-5 py-14'>
       <SectionIntro 
         icon={<FaBookOpen />}
         labelText="Backed by Health Experts & AI"

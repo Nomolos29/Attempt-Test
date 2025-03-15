@@ -1,5 +1,7 @@
-import { HeroSection } from "@/components";
-import { HealthSolution } from "@/components/home-page-sections";
+import { FutureOfWellness, HealthTransformation, HeroSection } from "@/components";
+import FaqSection from "@/components/global/FaqSection";
+import { Features, HealthSolution } from "@/components/home-page-sections";
+import ChatSection from "@/components/home-page-sections/ChatSection";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
@@ -30,7 +32,12 @@ export default function Home() {
       />
       {/* <PushNotificationManager />
       <InstallPrompt /> */}
+      <Features />
+      <ChatSection />
       <HealthSolution />
+      <FutureOfWellness />
+      <HealthTransformation />
+      <FaqSection />
     </main>
   );
 }
