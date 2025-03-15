@@ -33,11 +33,11 @@ export default function Home() {
       {/* <PushNotificationManager />
       <InstallPrompt /> */}
       <Features />
-      <ChatSection />
+      {/* <ChatSection /> */}
       <HealthSolution />
       <FutureOfWellness />
       <HealthTransformation />
-      <FaqSection />
+      {/* <FaqSection /> */}
     </main>
   );
 }
